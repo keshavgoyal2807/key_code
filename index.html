@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>GO TO CONSOLE</h2>
+        <script>
+            var string=[];
+            var a="keshav";
+            window.addEventListener('keydown',check);
+            function check(e)
+            {
+                //console.log(e.key);
+                string.splice(0,string.length-a.length+1);
+                string.push(e.key);
+                if(string.join('').includes(a))
+                {
+                    console.log("The Secret code is Keshav");
+                    alert("The Secret code is Keshav");
+                }
+                console.log(string);
+            }
+        </script>
+    </body>
+</html>
